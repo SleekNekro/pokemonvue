@@ -7,13 +7,10 @@
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
+body a:not(nav a) {
   color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
 }
+
 
 @media (hover: hover) {
   a:hover {
@@ -33,3 +30,31 @@ a,
     padding: 0 2rem;
   }
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+th {
+  background-color: #42b983;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: left;
+}
+
+td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+}
+
+tr:hover {
+  background-color: #f7fdfc;
+}
+
